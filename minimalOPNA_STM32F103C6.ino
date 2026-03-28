@@ -11,7 +11,7 @@
 #define YM_WR   PB9  // YM2608 strobe pulse for writing data. ACTIVE LOW
 #define YM_IC   PB10 // YM2608 initial clear, used as hardware reset. ACTIVE LOW
 
-//  #define YM_RD   PB11 // YM2608 read *from* synth. basically, unused here, because i pulled it to VCC. ACTIVE LOW
+#define YM_RD   PB11 // YM2608 read *from* synth. basically, unused here, because i pulled it to VCC. ACTIVE LOW
 // note: data bus is on PA0-PA7. these pins are in the same port, makes it easier to set them all with minimal latency. hardcoded a little below
 // note: PA8 is a 8 MHz clock for YM2608. (mco)
 
@@ -246,7 +246,7 @@ void scanFilesCount() {
     file.close(); // closing file, picking up next one
   }
   dir.close(); // closing the folder
-
+}
 //      draw calls for OLED
 
 // drawing main menu with our list of files
