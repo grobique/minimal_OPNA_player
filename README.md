@@ -27,9 +27,12 @@ Compilation - Smallest (-Os) with LTO
 
 <img width="941" height="51" alt="image" src="https://github.com/user-attachments/assets/57684e53-f684-4542-8c94-47f681df6d0b" />
 
+## "Dumps", because I can.
+Vorbis, quality 10, 88.2KHz.
+[Sleeping Terror](https://drive.google.com/file/d/1qs6JLUKrdlb78_PDLtCmRrMHYK6tYY8U/view?usp=sharing) (gdrive)
 
 ## Contributing
 please do.
 
 ## What's next?
-I dunno lul. I wanna make a port to STM32F4 with several firmware versions. Maybe I'll make it chew .M/.M2 files from Kajihara's driver. Since it's still plugged in my Line In, nothing stops me from making it a MIDI controlled synth. Hell yeah.
+I dunno lul. I wanna make a port to STM32F4 with several firmware versions. A PCB, for the love of our lord and saviour Shinki. Maybe I'll make it chew .M/.M2 files from Kajihara's driver. Since it's still plugged in my Line In, nothing stops me from making it a MIDI controlled synth. Hell yeah.
