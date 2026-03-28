@@ -25,6 +25,9 @@ Yes, it reqires software SPI. I still have no idea why my microcontroller hangs 
 
 Compilation - Smallest (-Os) with LTO
 
+<img width="941" height="51" alt="image" src="https://github.com/user-attachments/assets/57684e53-f684-4542-8c94-47f681df6d0b" />
+
+
 ## Contributing
 please do.
 
