@@ -22,6 +22,7 @@ line 96 -  #define ENABLE_ARDUINO_SERIAL 0   will free some memory, allowing to 
 line 169 - #define SPI_DRIVER_SELECT 2       will enable software SPI. i have no idea why SPI2 hangs the chip.
 ```
 Yes, it reqires software SPI. I still have no idea why my microcontroller hangs dead when I'm trying to use hardware SPI2.
+
 Compilation - Smallest (-Os) with LTO
 
 ## Contributing
