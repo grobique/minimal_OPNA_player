@@ -522,7 +522,7 @@ void loop() {
       // and syncing time so it wouldnt RUSH forwards as if it missed a train
       track_sync_timer = micros(); 
       return;
-
+    }
     drawPlayer(); // drawcall
 
     // reading commands from file!
@@ -581,7 +581,7 @@ void loop() {
         case 0x61: { 
             uint16_t s; vgmFile.read(&s, 2); // reading 2 bytes of lengh
             current_samples += s;            // adding to a timer
-            syncWaitUs(s * 22);              // 1 saple @ 44.1кГц ≈ 22.6 us (rounded to 22, syncWaitUs will compesate. syncWaitUs <3)
+            syncWaitUs(( (uint32_t)s * 10000 ) / 441);              // 1 saple @ 44.1кГц ≈ 22.6 us (rounded to 22, syncWaitUs will compesate. syncWaitUs <3)
           } break;
           
         // 0x62: waiting EXACTLY 1/60th of a second (NTSC)
@@ -608,7 +608,7 @@ void loop() {
         // skipping unknown commands
         default:
           if (cmd >= 0x70 && cmd <= 0x7F) { // 0x70-0x7F: short pause (last 4 bits + 1) samples
-            uint8_t w = (cmd & 0x0F) + 1; current_samples += w; syncWaitUs(w * 22); 
+            uint8_t w = (cmd & 0x0F) + 1; current_samples += w; syncWaitUs(( (uint32_t)w * 10000 ) / 441); 
           }
           // if we dont know a command, doing nothing
           else if (cmd >= 0x30 && cmd <= 0x3F) vgmFile.read(); // 1 byte command
@@ -622,4 +622,3 @@ void loop() {
       }
     }
   }
-}
