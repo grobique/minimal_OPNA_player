@@ -581,7 +581,7 @@ void loop() {
         case 0x61: { 
             uint16_t s; vgmFile.read(&s, 2); // reading 2 bytes of lengh
             current_samples += s;            // adding to a timer
-            syncWaitUs(( (uint32_t)s * 10000 ) / 441);              // 1 saple @ 44.1кГц ≈ 22.6 us (rounded to 22, syncWaitUs will compesate. syncWaitUs <3)
+            syncWaitUs(( (uint32_t)s * 10000 ) / 441);              // 1 saple @ 44.1кГц ≈ 22.6 us (evading any floating point operations to preserve precision, syncWaitUs will compesate. syncWaitUs <3)
           } break;
           
         // 0x62: waiting EXACTLY 1/60th of a second (NTSC)
