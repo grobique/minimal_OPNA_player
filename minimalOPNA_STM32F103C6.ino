@@ -523,8 +523,7 @@ void loop() {
     // if we are paused
     if (isPaused) {
       drawPlayer(); // updating the time
-      delay(100); //i wanted to make it bling but later, i have other priorities
-      // and syncing time so it wouldnt RUSH forwards as if it missed a train
+
       track_sync_timer = micros(); 
       return;
     }
