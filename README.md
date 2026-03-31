@@ -13,6 +13,7 @@ This is a **lightweight** (in current form) opensource project designed to inter
 
 ## To do:
 - Fix VGM tempo losses. These rush just a tiny bit, but I don't like it either way
+- Put the libraries in here. Messing with preinstalled libs is... meh...
 
 ## Schematic
 Refer to **[`schematic_v1.pdf`](./schematic_v1.pdf)** for pinouts and connections.
