@@ -11,6 +11,9 @@ This is a **lightweight** (in current form) opensource project designed to inter
 - Basic components! Well, aside from YM2608 and its DAC, YM3016.
 - Comments in (almost) ***EVERY SINGLE LINE*** of code!
 
+## To do:
+- Fix VGM tempo losses. These rush just a tiny bit, but I don't like it either way
+
 ## Schematic
 Refer to **[`schematic_v1.pdf`](./schematic_v1.pdf)** for pinouts and connections.
 
